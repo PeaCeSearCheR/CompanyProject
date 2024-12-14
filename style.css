@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif, "Poppins";
+  line-height: 1.4;
+  /* color: hsl(0, 100%, 94%); */
+  /* background-color: darkolivegreen; */
+}
+
+body {
+  background-color: #1c1c2e;
+  color: #fff;
+  line-height: 1.7;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.25px;
+  font-weight: 400;
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.middle-container {
+  margin: 0 auto;
+}
+.middle-container-p {
+  font-weight: bold;
+  font-size: 24px;
+}
+.context {
+  /* flex: 1; */
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+  width: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.context-header {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.context-box {
+  display: flex;
+  gap: 40px;
+}
+.content-p {
+  color: rgba(255, 255, 255, 0.5); /* Makes the text dimmer */
+  scrollbar-width: none;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 20px;
+  /* height: 160px; */
+  overflow: hidden;
+  /* transform: scale(1); */
+  /* opacity: 1; */
+}
+.middle-container a {
+  color: #ffc107;
+  text-decoration: none;
+  /* margin-left: 20px; */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.progress-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+.circular-progress {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(#ffc107 0deg, #444 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: #191923;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.circular-progress span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.label {
+  text-align: center;
+  margin-top: 10px;
+}
+/* end of circular progress bar / languages  */
+
+/* start of skill section / linear progress bar */
+.skills-section {
+  width: 400px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+.linear-progress-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linear-progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 70%;
+}
+
+.linear-progress {
+  position: relative;
+  width: 70%;
+  background: #444;
+  height: 7px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.linear-progress .progress-bar {
+  height: 100%;
+  background: #ffc107;
+  width: 0;
+  transition: width 1s;
+}
+/* end of linear progress bar */
+
+/* start of counter progress bar  */
+
+.counter-header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.counter-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between the number and label */
+}
+
+.counter-item h2 {
+  font-size: 40px;
+  color: #f39c12;
+  margin: 0;
+}
+
+.counter-item p {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+/* end of counter progress bar  */
+
+.left-side {
+  width: 400px;
+}
+hr {
+  margin: 20px 30px;
+  background: #8c8c8e;
+  width: 100%;
+  height: 1px;
+  opacity: 0.3;
+}
