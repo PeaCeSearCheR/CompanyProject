@@ -9,7 +9,7 @@
 //       } else {
 //         width++;
 //         elem.style.width = width + "%";
-//         elem.innerHTML = width * 1 + "%";
+//         elem.innerHTML = width  + "%";
 //       }
 //     }
 //   }
@@ -39,21 +39,16 @@ window.onload = function () {
   animateCounter("HonorsandAwards", 20); // Honors and Awards
 };
 
-function animateCounter(id, target) {
+function animateCounter(id, percentage) {
   const element = document.getElementById(id);
-  let count = 0;
-
+  let currentPercentage = 0;
+  // todo: change function
   const interval = setInterval(() => {
-    if (count >= target) {
+    if (currentPercentage >= percentage) {
       clearInterval(interval);
-      element.textContent =
-        target +
-        (id === "YearsExperience" || id === "HonorsandAwards" ? "+" : ""); // Add '+' for specific items
     } else {
-      count++;
-      element.textContent =
-        count +
-        (id === "YearsExperience" || id === "HonorsandAwards" ? "+" : "");
+      currentPercentage++;
+      element.textContent = currentPercentage;
     }
   }, 20); // change here for changing speed
 }
