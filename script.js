@@ -52,6 +52,10 @@ function animateCounter(id, percentage) {
     }
   }, 20); // change here for changing speed
 }
+function hide(objectId) {
+  const element = document.getElementById(objectId); // Set its display property to 'none'
+  element.style.display = "none";
+}
 
 // Animate All Counters
 function animateLinearProgress(id, labelName, percentage) {
