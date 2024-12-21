@@ -12,12 +12,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
     <div class="first-container">
       <div class="main-container">
+        <div>
+          <h1>
+            Discover my Amazing <br />
+            Art Space!
+          </h1>
+        </div>
+
+        <div class="rotate-span-box">
+          <<i>code</i>> I build
+          <span
+            class="rotate-span"
+            data-period="2000"
+            data-rotate='[ "web interfaces.","ios and android applications.","design mockups.","automation tools." ]'
+          >
+            <span class="wrap"></span>
+          <<i>/code</i>>
+        </div>
         <div class="counter-header">
           <div class="counter-item">
             <h2 id="YearsExperience">0</h2>
+            <span class="plus">+</span>
             <p>Years Experience</p>
           </div>
           <div class="counter-item">
@@ -30,6 +47,7 @@
           </div>
           <div class="counter-item">
             <h2 id="HonorsandAwards">0</h2>
+            <span class="plus">+</span>
             <p>Honors and Awards</p>
           </div>
         </div>
@@ -211,10 +229,14 @@
 
       <!-- progress bars - langauges -->
       <!-- circles -->
-      <div class="left-side">
-        <div style="width: 300px">
+      
+       <div class="left-side-frame">
+       <div class="left-side">
+        
+                
+                  
           <div class="author-info-box">
-            <div class="author-image-box">
+            <div class="author-image-box" >
               <a
                 href="http://127.0.0.1:5500/pictures/avatar.jpg"
                 class="art-avatar-curtain"
@@ -231,31 +253,34 @@
               <a href="" class="author-info">Artur Carter</a>
             </p>
             <div class="center-texts job-title">
-              Front-end Deweloper <br />
+              Front-end developer <br />
               Ui/UX Designer
             </div>
           </div>
 
           <!-- info of arter -->
           <!-- <div style="width: 300px"> -->
-          <div>
+          
+            <div class="scroll-bar"> 
+
+          <div style="padding: 30px;">
             <div class="introduce-info">
-              <span>Residence:</span>
-              <span>Canada</span>
+              <h6>Residence:</h6>
+              <span class="answer">Canada</span>
             </div>
             <div class="introduce-info">
-              <span>City:</span>
-              <span>Toronto</span>
+              <h6>City:</h6>
+              <span class="answer">Toronto</span>
             </div>
             <div class="introduce-info">
-              <span>Age:</span>
-              <span>26</span>
+              <h6>Age:</h6>
+              <span class="answer">26</span>
             </div>
           </div>
 
           <div class="line-break"></div>
 
-          <div class="progress-section">
+          <div class="progress-section" style="padding: 30px;">
             <div>
               <div class="circular-progress" id="circle-1">
                 <span>0%</span>
@@ -279,7 +304,7 @@
           <!-- linear progress bars -->
           <div class="line-break"></div>
 
-          <div class="skills-section">
+          <div class="skills-section" style="padding: 30px;">
             <div class="linear-progress-container">
               <div class="linear-progress-label">
                 <span>html</span>
@@ -328,7 +353,7 @@
           </div>
           <div class="line-break"></div>
 
-          <ul class="knowledge-list">
+          <ul class="knowledge-list" style="padding: 0 30px;">
             <li>
               <i class="fa-solid fa-c"></i>
               Bootstrap, Materialize
@@ -344,11 +369,53 @@
             </li>
           </ul>
 
-          <div class="line-break margin-zero"></div>
-          <a class="download" href="#">Download cv </a>
+          <div class="line-break margin-zero" ></div>
+          <a class="download" href="#" style="padding: 0 30px;">Download cv </a>
           <i class="fa-solid fa-download"></i>
+          </div>
+          <div class="left-side-footer">
+         
+            <!-- social link --> 
+             <a href="https://linkedin.com/" target="_blank"> <i class="fab fa-linkedin"></i> </a>
+              <!-- social link --> <!-- social link --> 
+               <a href="https://dribble.com/" target="_blank"> <i class="fab fa-dribbble"></i> </a>
+                <!-- social link --> <!-- social link -->
+                  <a href="https://behance.com/" target="_blank"> <i class="fab fa-behance"></i> </a>
+                   <!-- social link --> <!-- social link --> 
+                    <a href="https://github.com/" target="_blank"> <i class="fab fa-github"></i> </a>
+                     <!-- social link --> <!-- social link --> 
+                      <a href="https://twitter.com/" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                       <!-- social link -->
         </div>
+
+         
+          
+        </div>
+          
+       
+        </div>
+      
+    
+
+      <div class="home-right-side">
+        <div class="menu-bar">
+          <div class="menu-bar-frame ">
+            <div class="menu-bar-header">
+              <a class="menu-bar-btn"> <span></span></a>
+           
+          </div>  
+          </div class="home-page""><a href="#">HOME</a></div>
+            
+          </div>
+        
+        </div>
+       
+
+        
       </div>
-    </div>
-  </body>
+      </div>
+      
+      <script src="script.js"></script>
+
+      </body>
 </html>

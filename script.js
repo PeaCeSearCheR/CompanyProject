@@ -37,6 +37,7 @@ window.onload = function () {
   animateCounter("CompletedProjects", 143); // Completed Projects
   animateCounter("HappyCustomers", 114); // Happy Customers
   animateCounter("HonorsandAwards", 20); // Honors and Awards
+  rotateSpan();
 };
 
 function animateCounter(id, percentage) {
@@ -90,4 +91,45 @@ function animateCircularProgress(id, percentage) {
       span.textContent = `${currentPercentage}%`;
     }
   }, 20); // change here for changing speed
+}
+
+// rotate span for header of the site
+
+function rotateSpan() {
+  let elements = document.querySelectorAll(".rotate-span");
+  elements.forEach(function (el) {
+    let toRotate = JSON.parse(el.getAttribute("data-rotate"));
+    let period = parseInt(el.getAttribute("data-period"), 10) || 2000;
+    let loopNum = 0;
+    let isDeleting = false;
+    function tick() {
+      let i = loopNum % toRotate.length;
+      let fullTxt = toRotate[i];
+      if (isDeleting) {
+        el.querySelector(".wrap").textContent = fullTxt.substring(
+          0,
+          el.querySelector(".wrap").textContent.length - 1
+        );
+      } else {
+        el.querySelector(".wrap").textContent = fullTxt.substring(
+          0,
+          el.querySelector(".wrap").textContent.length + 1
+        );
+      }
+      let delta = 300 - Math.random() * 250;
+      if (isDeleting) {
+        delta /= 4;
+      }
+      if (!isDeleting && el.querySelector(".wrap").textContent === fullTxt) {
+        delta = period;
+        isDeleting = true;
+      } else if (isDeleting && el.querySelector(".wrap").textContent === "") {
+        isDeleting = false;
+        loopNum++;
+        delta = 10;
+      }
+      setTimeout(tick, delta);
+    }
+    tick();
+  });
 }
