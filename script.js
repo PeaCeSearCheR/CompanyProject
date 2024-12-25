@@ -85,7 +85,7 @@ function animateCircularProgress(id, percentage) {
       clearInterval(interval);
     } else {
       currentPercentage++;
-      circle.style.background = `conic-gradient(#fdd835 ${
+      circle.style.background = `conic-gradient(#ffc107 ${
         currentPercentage * 3.6
       }deg, #444 ${currentPercentage * 3.6}deg)`;
       span.textContent = `${currentPercentage}%`;
