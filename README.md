@@ -1,2 +1,2 @@
 # CompanyProject
-project which is given to me to complete it.
+Frontend of an artist webpage with HTML/CSS/JS
